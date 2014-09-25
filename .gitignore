@@ -158,3 +158,6 @@ $RECYCLE.BIN/
 *.chk
 *.jrs
 *.ide
+TwitterManager/TwitterManager/App_Data/aspnet-TwitterManager-20140513031224.mdf
+TwitterManager/TwitterManager/App_Data/aspnet-TwitterManager-20140513031224.mdf
+TwitterManager/TwitterManager/App_Data/aspnet-TwitterManager-20140513031224_log.ldf
