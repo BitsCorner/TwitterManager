@@ -103,7 +103,7 @@ namespace TwitterHelper
                 return null;
         }
 
-        public async Task<TwitterUserCursor> Unfollow(string screen_name, string userid)
+        public async Task<TwitterUserCursor> Unfollow(string userid)
         {
             HttpClient client = new HttpClient(new OAuthMessageHandler(new HttpClientHandler()));
             HttpResponseMessage response = await client.DeleteAsync(TwitterEndpointHelper.GetDestroyFriendshipURI() + "?user_id="+userid );

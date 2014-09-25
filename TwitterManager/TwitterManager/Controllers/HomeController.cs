@@ -49,16 +49,16 @@ namespace TwitterManager.Controllers
             return View(users);
         }
 
-        public void Unfollow(string id){
+        public async Task Unfollow(string id){
             var twitterRepo = new TwitterHelper.TwitterRepository();
-            twitterRepo.Unfollow(id, id);
+            await twitterRepo.Unfollow(id);
         }
 
-        public void MentionToFix(string id)
+        public async Task MentionToFix(string id)
         {
             var twitterRepo = new TwitterHelper.TwitterRepository();
             var Status = "@" + id + " you are not following me! fix it...";
-            twitterRepo.Tweet(Status);
+            await twitterRepo.Tweet(Status);
         }
 
         public void DirectMessageToFix(string screenname)
