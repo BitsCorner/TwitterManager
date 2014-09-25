@@ -1,0 +1,8 @@
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\bin\Debug\TwitterRepository.dll
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\bin\Debug\TwitterRepository.pdb
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\obj\Debug\TwitterRepository.dll
+C:\Users\Somaye\Documents\GitHub\TwitterManager\TwitterManager\TwitterRepository\obj\Debug\TwitterRepository.pdb

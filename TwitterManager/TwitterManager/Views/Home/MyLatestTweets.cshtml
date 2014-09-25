@@ -1,0 +1,14 @@
+﻿@using TwitterHelper.Entity
+@model List<TwitterStatus>
+@{
+    ViewBag.Title = "Latest Tweets";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@foreach (var item in Model)
+{
+    <p>@Html.Raw(item.text) </p>
+    <p class="small">@item.created_at</p>
+    <hr />
+}

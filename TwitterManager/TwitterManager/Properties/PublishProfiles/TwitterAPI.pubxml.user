@@ -1,0 +1,235 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\TwitterAPI</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>05/13/2014 14:43:45</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>05/13/2014 14:44:07</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>05/13/2014 14:44:08</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Core.dll">
+      <publishTime>05/13/2014 14:44:27</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.EntityFramework.dll">
+      <publishTime>05/13/2014 14:44:29</publishTime>
+    </File>
+    <File Include="bin/Microsoft.AspNet.Identity.Owin.dll">
+      <publishTime>05/13/2014 14:44:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.dll">
+      <publishTime>05/13/2014 14:44:31</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Host.SystemWeb.dll">
+      <publishTime>05/13/2014 14:44:32</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Cookies.dll">
+      <publishTime>05/13/2014 14:44:35</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.dll">
+      <publishTime>05/13/2014 14:44:33</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Facebook.dll">
+      <publishTime>05/13/2014 14:44:34</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Google.dll">
+      <publishTime>05/13/2014 14:44:37</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.MicrosoftAccount.dll">
+      <publishTime>05/13/2014 14:44:39</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.OAuth.dll">
+      <publishTime>05/13/2014 14:44:36</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Owin.Security.Twitter.dll">
+      <publishTime>05/13/2014 14:44:38</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>05/13/2014 11:58:34</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>05/13/2014 14:43:41</publishTime>
+    </File>
+    <File Include="bin/Owin.dll">
+      <publishTime>05/13/2014 14:44:30</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>07/09/2013 11:04:28</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>05/13/2014 14:43:26</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>05/13/2014 14:43:32</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>05/13/2014 14:43:25</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>05/13/2014 14:43:23</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>05/13/2014 14:43:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>05/13/2014 14:43:29</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>05/13/2014 14:43:29</publishTime>
+    </File>
+    <File Include="bin/TwitterApi.dll">
+      <publishTime>05/29/2014 13:45:38</publishTime>
+    </File>
+    <File Include="bin/TwitterHelper.dll">
+      <publishTime>05/29/2014 13:45:29</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>05/13/2014 14:43:49</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>05/13/2014 15:12:10</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.eot">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.svg">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.ttf">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="fonts/glyphicons-halflings-regular.woff">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>05/13/2014 15:12:10</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>05/13/2014 15:12:24</publishTime>
+    </File>
+    <File Include="Scripts/App/TwitterAPI.js">
+      <publishTime>05/24/2014 18:04:20</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>05/13/2014 15:12:11</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.js">
+      <publishTime>05/13/2014 15:12:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.js">
+      <publishTime>05/13/2014 15:12:13</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.10.2.min.map">
+      <publishTime>05/13/2014 15:12:12</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>05/13/2014 15:12:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>05/13/2014 15:12:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>05/13/2014 15:12:24</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>05/13/2014 15:12:24</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.6.2.js">
+      <publishTime>05/13/2014 15:12:15</publishTime>
+    </File>
+    <File Include="Scripts/respond.js">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="Scripts/respond.min.js">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>05/13/2014 15:12:15</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginConfirmation.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Account/ExternalLoginFailure.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Account/Login.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Account/Manage.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Account/Register.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Account/_ChangePasswordPartial.cshtml">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="Views/Account/_ExternalLoginsListPartial.cshtml">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="Views/Account/_RemoveAccountPartial.cshtml">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="Views/Account/_SetPasswordPartial.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Home/Followers.cshtml">
+      <publishTime>05/17/2014 12:44:38</publishTime>
+    </File>
+    <File Include="Views/Home/Following.cshtml">
+      <publishTime>05/21/2014 19:19:11</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>05/13/2014 15:33:36</publishTime>
+    </File>
+    <File Include="Views/Home/MyLatestTweets.cshtml">
+      <publishTime>05/13/2014 16:49:44</publishTime>
+    </File>
+    <File Include="Views/Home/NotFollowingBack.cshtml">
+      <publishTime>05/24/2014 16:39:14</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>05/13/2014 15:12:17</publishTime>
+    </File>
+    <File Include="Views/Shared/TwitterUser.cshtml">
+      <publishTime>05/24/2014 18:03:26</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>05/21/2014 19:35:19</publishTime>
+    </File>
+    <File Include="Views/Shared/_LoginPartial.cshtml">
+      <publishTime>05/13/2014 15:12:18</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>05/13/2014 15:12:10</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>05/13/2014 15:12:10</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>05/29/2014 13:45:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

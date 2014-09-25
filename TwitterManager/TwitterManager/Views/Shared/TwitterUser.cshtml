@@ -1,0 +1,88 @@
+﻿@using TwitterHelper.Entity
+@model TwitterUser
+<input type="hidden" data-id="@Model.id_str" data-idstr="@Model.id_str" />
+
+<div class="container-fluid userrow_@Model.id_str">
+
+    <div class="row">
+        <div class="col-md-1">
+            <img src="@Model.profile_image_url_https" class="img-responsive" alt="@Model.name">
+        </div>
+        <div class="col-md-11">
+            <div class="row">
+                <small> @@@Model.screen_name &nbsp; @Model.name &nbsp; at: @Model.location </small>
+            </div>
+            <div class="row">
+                @if(Model.description != null)
+                    {
+                    <small>@Model.description &nbsp;
+                    @if(Model.url != null)
+                    {
+                        <a href="@Model.url" target="_blank">@Model.url</a>
+                    }
+                    </small>
+                }
+            </div>
+            @if(@Model.status != null)
+            {
+                <div class="row">
+                    <small><a href="@Model.status.source" target="_blank">Status</a>&nbsp; @Model.status.text</small>
+                </div>
+            }
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <small>
+                <b>friends count:</b> @Model.friends_count &nbsp;
+                <b>followers_count</b> @Model.followers_count &nbsp;
+                <b>statuses_count </b>  @Model.statuses_count &nbsp;
+                @if (Model.following)
+                {
+                    <button type="button" class="btn btn-danger btn-xs unfollowlnk" data-screenname="@Model.screen_name" data-userid="@Model.id_str">Unfollow</button>    
+                }
+                else
+                {
+                    <button type="button" class="btn btn-success btn-xs">Follow</button>
+                }
+@*                @if (Model.connections != null)
+                {
+                    @: <b>Connections:</b> &nbsp
+                    foreach(var item in Model.connections)
+                    {
+                        <b>@item &nbsp</b>
+                    }
+                }*@
+
+                @if(!Model.IsFollowingBack)
+                {
+                    <!-- Single button -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-danger btn-xs dropdown-toggle" data-toggle="dropdown">
+                        Not following back<span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a class="directmessagetofix" data-screenname="@Model.screen_name" data-userid="@Model.id_str" href="#">Direct message to fix it</a></li>
+                        <li><a class="tweettofix" data-screenname="@Model.screen_name" data-userid="@Model.id_str" href="#">Mention to fix it</a></li>
+                        <li><a class="unfollowlnk" data-screenname="@Model.screen_name" data-userid="@Model.id_str" href="#">unfollow</a></li>
+                      </ul>
+                    </div>
+                }
+            </small>
+        </div>
+    </div>
+
+    <div class="row">
+        <button type="button" class="btn btn-danger btn-xs">Block</button>
+        <button type="button" class="btn btn-link btn-xs">White List</button>
+        <button type="button" class="btn btn-link btn-xs">Mute User</button>
+        <button type="button" class="btn btn-link btn-xs">Mention</button>
+        <button type="button" class="btn btn-link btn-xs">Add To List</button>
+        <button type="button" class="btn btn-link btn-xs">Add Tags</button>
+    </div>
+
+    <div class="row">
+        <hr />
+    </div>
+
+</div>

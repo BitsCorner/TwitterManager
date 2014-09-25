@@ -1,0 +1,9 @@
+C:\Dropbox\Koukia\Koukia\TwitterRepository\bin\Release\TwitterHelper.dll
+C:\Dropbox\Koukia\Koukia\TwitterRepository\bin\Release\TwitterHelper.pdb
+C:\Dropbox\Koukia\Koukia\TwitterRepository\bin\Release\Newtonsoft.Json.dll
+C:\Dropbox\Koukia\Koukia\TwitterRepository\bin\Release\System.Net.Http.Formatting.dll
+C:\Dropbox\Koukia\Koukia\TwitterRepository\bin\Release\Newtonsoft.Json.xml
+C:\Dropbox\Koukia\Koukia\TwitterRepository\bin\Release\System.Net.Http.Formatting.xml
+C:\Dropbox\Koukia\Koukia\TwitterRepository\obj\Release\TwitterHelper.csprojResolveAssemblyReference.cache
+C:\Dropbox\Koukia\Koukia\TwitterRepository\obj\Release\TwitterHelper.dll
+C:\Dropbox\Koukia\Koukia\TwitterRepository\obj\Release\TwitterHelper.pdb
