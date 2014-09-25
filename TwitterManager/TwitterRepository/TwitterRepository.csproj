@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\FriendshipLookup.cs" />
+    <Compile Include="Entity\TwitterUserIDCursor.cs" />
     <Compile Include="TwitterEndpointHelper.cs" />
     <Compile Include="Entity\TwitterUserCursor.cs" />
     <Compile Include="Entity\TwitterUser.cs" />

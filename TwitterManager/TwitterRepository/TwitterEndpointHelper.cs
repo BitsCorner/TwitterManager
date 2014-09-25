@@ -59,10 +59,19 @@ namespace TwitterHelper
                    "friendships/destroy.json";
         }
 
+        public static string GetFriendsIDsURI(Int64 cursor, string screenName, int count)
+        {
+            return _twitterBaseAddress +
+                   "friends/ids.json?" +
+                   string.Format("?cursor={0}&screen_name={1}&count={2}", cursor, screenName, count);
+        }
+
         public static string GetTweetURI()
         {
             return _twitterBaseAddress +
                    "statuses/update.json";
         }
+
+        
     }
 }

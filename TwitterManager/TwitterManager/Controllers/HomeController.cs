@@ -15,7 +15,6 @@ namespace TwitterManager.Controllers
        
         public ActionResult Index()
         {
-
             return View();
         }
 
@@ -40,6 +39,10 @@ namespace TwitterManager.Controllers
         public async Task<ActionResult> NotFollowingBack(Int64? cursor = -1)
         {
             var twitterRepo = new TwitterHelper.TwitterRepository();
+
+            //TODO: this one is a new one that might improve the unfollowers call, to make it more efficient.
+            var test = await twitterRepo.GetUnFollowers(User.Identity.Name, (Int64)cursor);
+
             var users = await twitterRepo.GetFollowings(User.Identity.Name, (Int64)cursor);
             if (users != null && users.users != null)
                 users.users = users.users.Where(m => m.IsFollowingBack == false).ToList();

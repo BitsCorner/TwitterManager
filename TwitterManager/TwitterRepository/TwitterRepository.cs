@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TwitterHelper.Entity;
 using TwitterHelper.OAuth;
+using TwitterRepository.Entity;
 
 namespace TwitterHelper
 {
@@ -88,11 +89,23 @@ namespace TwitterHelper
                 return null;
         }
 
+        private async Task<List<string>> GetFriendsIDs(string screenName, Int64 cursor = -1)
+        {
+            HttpClient client = new HttpClient(new OAuthMessageHandler(new HttpClientHandler()));
+            HttpResponseMessage response = await client.GetAsync(TwitterEndpointHelper.GetFriendsIDsURI(cursor, screenName, 5000));
+            JToken statuses = await response.Content.ReadAsAsync<JToken>();
+            if (response.IsSuccessStatusCode)
+            { 
+                var c = Newtonsoft.Json.JsonConvert.DeserializeObject<TwitterUserIDCursor>(statuses.ToString());
+                return c.ids;
+            }
+            else
+                return null;
+        }
+
         public async Task<TwitterUserCursor> Unfollow(string screen_name, string userid)
         {
             HttpClient client = new HttpClient(new OAuthMessageHandler(new HttpClientHandler()));
-            //var argsAsJson = "screen_name=" + screen_name;
-            //StringContent content = new StringContent(argsAsJson, Encoding.UTF8, "application/json");
             HttpResponseMessage response = await client.DeleteAsync(TwitterEndpointHelper.GetDestroyFriendshipURI() + "?user_id="+userid );
             JToken statuses = await response.Content.ReadAsAsync<JToken>();
             if (response.IsSuccessStatusCode)
@@ -116,6 +129,17 @@ namespace TwitterHelper
             }
             else
                 return null;
+        }
+
+        public async Task<List<FriendshipLookup>> GetUnFollowers(string screenName, Int64 cursor = -1)
+        {
+            var UserIDs = await GetFriendsIDs(screenName, cursor);
+            var first50 = UserIDs.Take(50);
+            var Friendships = await GetTwitterFriendships(string.Join("%2C", first50));
+            if (Friendships != null)
+                return Friendships;
+            else
+               return null;
         }
 
     }
